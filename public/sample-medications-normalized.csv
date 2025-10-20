@@ -1,0 +1,11 @@
+PATIENT,ENCOUNTER,START,DESCRIPTION,GENERIC_NAME
+patient-001,enc-12345,2024-01-15,Tylenol 500 MG Oral Tablet,acetaminophen
+patient-001,enc-12346,2024-01-20,Lipitor 20mg,atorvastatin
+patient-002,enc-12347,2024-02-10,Advil 200mg,ibuprofen
+patient-002,enc-12348,2024-02-15,Metformin hydrochloride 500 MG Oral Tablet,metformin
+patient-003,enc-12349,2024-03-01,Lisinopril 10 MG Oral Tablet,lisinopril
+patient-003,enc-12350,2024-03-05,APAP 325mg,acetaminophen
+patient-004,enc-12351,2024-03-10,Aspirin 81mg,aspirin
+patient-004,enc-12352,2024-03-15,Prilosec 20mg,omeprazole
+patient-005,enc-12353,2024-04-01,Synthroid 50mcg,levothyroxine
+patient-005,enc-12354,2024-04-10,Norvasc 5mg,amlodipine

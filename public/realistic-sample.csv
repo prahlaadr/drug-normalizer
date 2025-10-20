@@ -1,0 +1,16 @@
+START,STOP,PATIENT,PAYER,ENCOUNTER,CODE,DESCRIPTION,BASE_COST,PAYER_COVERAGE,DISPENSES,TOTALCOST,REASONCODE,REASONDESCRIPTION
+2023-01-15T10:30:00Z,2023-07-15T10:30:00Z,7f8c1e42-9a5d-4b3e-8f2a-1d4c6e9b3a7f,Medicare,enc-001,849574,Simvastatin 20 MG Oral Tablet,12.50,10.00,6,75.00,13644009,Hyperlipidemia
+2023-02-10T14:15:00Z,,7f8c1e42-9a5d-4b3e-8f2a-1d4c6e9b3a7f,Medicare,enc-002,314076,Lisinopril 10 MG Oral Tablet,8.25,6.60,12,99.00,38341003,Hypertension
+2023-03-05T09:00:00Z,2023-03-12T09:00:00Z,3b2f7d91-6c4e-4a8b-9e1c-5d7f8a3b2e6c,UnitedHealthcare,enc-003,197696,Amoxicillin 250 MG Oral Capsule,15.00,12.00,1,15.00,43878008,Streptococcal pharyngitis
+2023-03-20T11:30:00Z,,3b2f7d91-6c4e-4a8b-9e1c-5d7f8a3b2e6c,UnitedHealthcare,enc-004,308136,Metformin hydrochloride 500 MG Oral Tablet,10.50,8.40,12,126.00,44054006,Type 2 Diabetes
+2023-04-12T15:45:00Z,,5e9d2c71-4a3b-8f6e-2d1c-9b7e4f6a8c2d,Aetna,enc-005,1049502,Acetaminophen 325 MG Oral Tablet [Tylenol],5.99,0,2,11.98,22253000,Pain
+2023-04-18T08:20:00Z,,5e9d2c71-4a3b-8f6e-2d1c-9b7e4f6a8c2d,Aetna,enc-006,849437,Omeprazole 20 MG Delayed Release Oral Capsule,18.75,15.00,3,56.25,235595009,Gastroesophageal reflux disease
+2023-05-03T13:10:00Z,2023-08-03T13:10:00Z,a4b6c8d2-7e3f-9a1b-5c4d-8e2f7a9b3c6d,Blue Cross,enc-007,617318,Atorvastatin 20 MG Oral Tablet,22.00,17.60,3,66.00,13644009,Hyperlipidemia
+2023-05-15T16:30:00Z,,a4b6c8d2-7e3f-9a1b-5c4d-8e2f7a9b3c6d,Blue Cross,enc-008,310798,Levothyroxine Sodium 0.05 MG Oral Tablet,9.50,7.60,12,114.00,40930008,Hypothyroidism
+2023-06-01T10:00:00Z,,2c5e8f4a-9b3d-6e1c-7f2a-4d8b9e6c3a5f,Cigna,enc-009,197361,Ibuprofen 200 MG Oral Tablet,7.25,0,3,21.75,82423001,Chronic pain
+2023-06-10T14:45:00Z,,2c5e8f4a-9b3d-6e1c-7f2a-4d8b9e6c3a5f,Cigna,enc-010,308971,Amlodipine 5 MG Oral Tablet,11.00,8.80,12,132.00,38341003,Hypertension
+2023-07-08T09:30:00Z,2023-07-15T09:30:00Z,6d9f3b2e-5c7a-4d8b-1e6f-9a2c8d4e7b3a,Medicare,enc-011,1049221,Azithromycin 250 MG Oral Tablet,25.50,20.40,1,25.50,10509002,Acute bronchitis
+2023-07-22T11:15:00Z,,6d9f3b2e-5c7a-4d8b-1e6f-9a2c8d4e7b3a,Medicare,enc-012,567576,Albuterol 0.09 MG/ACTUAT Inhalation Aerosol,42.00,33.60,2,84.00,195967001,Asthma
+2023-08-05T15:00:00Z,,8f2b4d6c-3e9a-7b1d-5f4c-2a8e6d9b7c3f,UnitedHealthcare,enc-013,197696,Amox 500mg,18.00,14.40,2,36.00,444814009,Viral sinusitis
+2023-08-14T10:45:00Z,,8f2b4d6c-3e9a-7b1d-5f4c-2a8e6d9b7c3f,UnitedHealthcare,enc-014,205923,Warfarin Sodium 5 MG Oral Tablet,14.25,11.40,12,171.00,49436004,Atrial fibrillation
+2023-09-03T13:20:00Z,,9e4c7a3f-2d6b-8e1c-5a7f-3b9d4c8e2f6a,Aetna,enc-015,245314,APAP 500mg Tab,4.50,0,2,9.00,25064002,Headache

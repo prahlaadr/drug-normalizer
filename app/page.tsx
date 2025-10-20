@@ -231,16 +231,16 @@ export default function Home() {
             <div className="mb-6 overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
-                  <tr className="border-b">
-                    <th className="text-left p-2">Original</th>
-                    <th className="text-left p-2">Generic Name</th>
+                  <tr className="border-b-2 border-gray-300">
+                    <th className="text-left p-3 font-bold text-gray-800">Original</th>
+                    <th className="text-left p-3 font-bold text-gray-800">Generic Name</th>
                   </tr>
                 </thead>
                 <tbody>
                   {normalizedData.slice(0, 10).map((row, i) => (
-                    <tr key={i} className="border-b">
-                      <td className="p-2">{String(row[selectedColumn])}</td>
-                      <td className="p-2 font-semibold">{row.GENERIC_NAME}</td>
+                    <tr key={i} className="border-b border-gray-200">
+                      <td className="p-3 text-gray-700">{String(row[selectedColumn])}</td>
+                      <td className="p-3 font-semibold text-blue-600">{row.GENERIC_NAME}</td>
                     </tr>
                   ))}
                 </tbody>

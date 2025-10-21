@@ -132,12 +132,38 @@ export default function Home() {
         {/* Upload Section */}
         {!csvData && (
           <div className="bg-white rounded-lg shadow-lg p-8">
+            {/* Instructions */}
+            <div className="mb-8 p-6 bg-blue-50 border border-blue-200 rounded-lg">
+              <h2 className="text-lg font-bold text-gray-900 mb-3">How It Works</h2>
+              <ol className="space-y-2 text-gray-700">
+                <li className="flex items-start">
+                  <span className="font-bold text-blue-600 mr-2">1.</span>
+                  <span><strong>Upload your data:</strong> Click &ldquo;Try Sample Data&rdquo; to test with example medications, or upload your own CSV file containing medication names</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="font-bold text-blue-600 mr-2">2.</span>
+                  <span><strong>Select column:</strong> Choose which column contains the medication names to normalize</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="font-bold text-blue-600 mr-2">3.</span>
+                  <span><strong>Process:</strong> We&apos;ll use RxNorm API to convert brand names and variations to standardized generic names</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="font-bold text-blue-600 mr-2">4.</span>
+                  <span><strong>Download:</strong> Get your enriched CSV with a new GENERIC_NAME column added</span>
+                </li>
+              </ol>
+              <p className="text-sm text-gray-600 mt-4 italic">
+                💡 All processing happens in your browser - your data never leaves your device
+              </p>
+            </div>
+
             <div className="space-y-6">
               <button
                 onClick={loadSample}
                 className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-4 px-6 rounded-lg transition"
               >
-                Try Sample Data
+                Try Sample Data (15 medications)
               </button>
 
               <div className="relative">
@@ -157,8 +183,9 @@ export default function Home() {
                     onChange={handleFileUpload}
                     className="hidden"
                   />
-                  <p className="text-gray-600">Click to upload CSV file</p>
+                  <p className="text-gray-600 font-semibold">Click to upload your CSV file</p>
                   <p className="text-sm text-gray-400 mt-2">or drag and drop</p>
+                  <p className="text-xs text-gray-400 mt-2">Maximum file size: 10MB</p>
                 </div>
               </label>
             </div>
@@ -176,23 +203,35 @@ export default function Home() {
             <select
               value={selectedColumn}
               onChange={(e) => setSelectedColumn(e.target.value)}
-              className="w-full p-3 border border-gray-300 rounded-lg mb-6"
+              className="w-full p-3 border border-gray-300 rounded-lg mb-6 text-gray-800 font-medium bg-white"
             >
-              <option value="">Select a column...</option>
+              <option value="" className="text-gray-400">Select a column...</option>
               {csvData.columns.map((col) => (
-                <option key={col} value={col}>
+                <option key={col} value={col} className="text-gray-800">
                   {col}
                 </option>
               ))}
             </select>
 
-            <button
-              onClick={handleNormalize}
-              disabled={!selectedColumn}
-              className="w-full bg-green-500 hover:bg-green-600 disabled:bg-gray-300 text-white font-semibold py-4 px-6 rounded-lg transition"
-            >
-              Normalize Drug Names
-            </button>
+            <div className="flex gap-4">
+              <button
+                onClick={handleNormalize}
+                disabled={!selectedColumn}
+                className="flex-1 bg-green-500 hover:bg-green-600 disabled:bg-gray-300 disabled:cursor-not-allowed text-white font-semibold py-4 px-6 rounded-lg transition"
+              >
+                Normalize Drug Names
+              </button>
+              <button
+                onClick={() => {
+                  setCSVData(null);
+                  setSelectedColumn('');
+                  setError(null);
+                }}
+                className="px-8 bg-gray-500 hover:bg-gray-600 text-white font-semibold py-4 rounded-lg transition"
+              >
+                Start Over
+              </button>
+            </div>
           </div>
         )}
 
